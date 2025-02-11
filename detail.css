@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2D336B, #1A1F4B); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff; /* Default text color */
+}
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.12); /* Semi-transparent white */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    width: 520px;
+    animation: fadeIn 0.8s ease-in-out; /* Fade-in animation */
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff; /* White color for title */
+    font-size: 2.5rem; /* Increased font size */
+    letter-spacing: 1px; /* Add spacing for elegance */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for table */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+table:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
+}
+
+th {
+    background: linear-gradient(90deg, #2D336B, #1A1F4B); /* Header gradient */
+    color: #ffffff; /* White text for header */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    background-color: rgba(106, 98, 98, 0.1); /* Light background for cells */
+    color: #ffffff; /* White text for cells */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for inputs */
+    color: #ffffff; /* White text for inputs */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Darker background on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle shadow on focus */
+}
+
+/* Buttons */
+.btn-primary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #2D336B, #1A1F4B); /* Primary button gradient */
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Center the button */
+td[colspan="2"] {
+    text-align: center;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    th, td {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    input {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+
+    .btn-primary {
+        font-size: 14px; /* Reduce button font size for smaller screens */
+    }
+}

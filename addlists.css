@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2D336B; /* Main background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff; /* Keeping the container white for contrast */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for depth */
+    width: 600px;
+    overflow: auto;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2D336B; /* Primary color */
+    font-size: 2rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #343964; /* Keeping the table background white */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2D336B; /* Primary color */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #333333;
+    font-size: 14px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #2D336B; /* Primary color for borders */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    border-color: #0056b3; /* Darker shade on focus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Subtle shadow on focus */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #2D336B; /* Primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Table Borders */
+table, th, td {
+    border: none; /* No borders for a cleaner look */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
